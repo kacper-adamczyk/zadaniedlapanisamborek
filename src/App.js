@@ -12,7 +12,7 @@ function App() {
   const [x2, setx2] = useState();
   const [x0, setX0] = useState();
   useEffect(() => {
-    document.title = "Zadanie dla Pani Samborek";
+    document.title = "Zaadanie dla Pani Samborek";
   }, []);
 
   const handleChangeA = (event1) => {
