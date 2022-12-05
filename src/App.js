@@ -7,7 +7,7 @@ function App() {
   const [a, setA] = useState();
   const [b, setB] = useState();
   const [c, setC] = useState();
-  const [delta, setDelta] = useState("adwa");
+  const [delta, setDelta] = useState("");
   const [x1, setx1] = useState();
   const [x2, setx2] = useState();
   const [x0, setX0] = useState();
