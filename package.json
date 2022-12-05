@@ -1,7 +1,7 @@
 {
   "name": "zadaniedlapanisamborek",
   "version": "0.1.0",
-  "homepage": "https://kacper-adamczyk.github.io/zadaniedlapanisamborek/",
+  "homepage": "https://kacper-adamczyk.github.io/zadaniedlapanisamborek",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
