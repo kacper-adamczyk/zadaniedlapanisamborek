@@ -7,7 +7,7 @@ function App() {
   const [a, setA] = useState();
   const [b, setB] = useState();
   const [c, setC] = useState();
-  const [delta, setDelta] = useState();
+  const [delta, setDelta] = useState("adwa");
   const [x1, setx1] = useState();
   const [x2, setx2] = useState();
   const [x0, setX0] = useState();
@@ -29,8 +29,13 @@ function App() {
   }
 
   useEffect(() => {
-    {
-      if (delta === 0) {
+     if (a==0)
+      {
+        setDelta("error, funkcja liniowa");
+        setx1(null)
+        setx2(null)
+      }
+      else  if (delta === 0) {
         setX0(-b / (2 * a));
         setx1(null);
         setx2(null);
@@ -38,14 +43,14 @@ function App() {
         setx1((-b - Math.sqrt(delta)) / (2 * a));
         setx2((-b + Math.sqrt(delta)) / (2 * a));
         setX0(null);
-      } else if (delta < 0)
+      } else if (delta < 0){
         alert("Delta is negative") &&
           setx1(" ") &&
           setx2(" ") &&
           setX0(" ") &&
           setDelta("Delta jest ujemna");
-    }
-  }, [delta]);
+      }
+  }, [delta, a]);
   return (
     <div className="App">
       <form>
