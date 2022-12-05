@@ -44,11 +44,10 @@ function App() {
         setx2((-b + Math.sqrt(delta)) / (2 * a));
         setX0(null);
       } else if (delta < 0){
-        alert("Delta is negative") &&
+        alert("Delta jest ujemna ") &&
           setx1(" ") &&
           setx2(" ") &&
-          setX0(" ") &&
-          setDelta("Delta jest ujemna");
+          setX0(" ");
       }
   }, [delta, a]);
   return (
