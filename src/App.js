@@ -84,7 +84,7 @@ function App() {
         Oblicz!
       </button>
 
-      <h1>Δ = {delta}</h1>
+      {delta && <h1>Δ = {delta}</h1>}
       {x0 && <h1>x0 = {x0}</h1>}
       {x1 && <h1>x1 = {x1}</h1>}
       {x2 && <h1>x2 = {x2}</h1>}
